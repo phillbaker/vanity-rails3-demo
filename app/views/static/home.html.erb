@@ -1,0 +1,10 @@
+<h1>Static#home</h1>
+<p>Find me in app/views/static/home.html.erb</p>
+
+<h2>Get started for only $<%= ab_test :price_options2 %> a month!</h2>
+<%= link_to 'Make a new account', new_account_path %>
+
+<%= @vanity_identity %>
+<%= Vanity.playground.participant_info(@vanity_identity) %>
+
+<%= vanity_js %>
